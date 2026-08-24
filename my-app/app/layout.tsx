@@ -28,7 +28,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <nav className="bg-gray-800 text-white p-4 flex gap-4">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>  
-          <Link href="about/sharda">Sharda</Link>
+          <Link href="/sharda">Sharda</Link>
+          <Link href="/sharda/classroom">Classroom</Link>
         </nav>
         <div className="outline : outline-red-700">
         {children}
