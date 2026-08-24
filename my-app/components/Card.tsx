@@ -1,8 +1,15 @@
-export default function Card(){
+type CardProps = {
+    title: string;
+    description: string;
+};
+
+export default function Card({title , description}: CardProps) 
+{
     return(
-        <div>
-            <h1>Card Component</h1>
-            <p>This is a simple card Component </p>
+        <div className="card p-4 rounded shadow-md w-fit text-white bg-yellow-700">
+            <h1 className="text-lg font-bold mb-2 text-white">{title}</h1>
+            <p className="text-gray-300">{description}</p>
         </div>
+        
     )
 }
